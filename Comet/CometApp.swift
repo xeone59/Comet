@@ -11,7 +11,10 @@ import SwiftUI
 struct CometApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .onAppear {
+                    print("后端 API 地址: \(API.baseURL)")
+                }
         }
     }
 }

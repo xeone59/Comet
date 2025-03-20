@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-black text-white">
+    <!-- 视频播放器 -->
+    <div class="relative h-56 bg-gray-900">
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1" 
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <i class="fas fa-play-circle text-5xl text-white opacity-80"></i>
+        </div>
+        <button class="absolute top-4 left-4 text-white">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+    </div>
+
+    <!-- 视频信息 -->
+    <div class="p-4">
+        <h1 class="text-xl font-bold mb-2">视频标题</h1>
+        <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde" 
+                     class="w-8 h-8 rounded-full mr-2">
+                <span class="text-sm">创作者名称</span>
+            </div>
+            <button class="bg-red-600 px-4 py-1 rounded-full text-sm">关注</button>
+        </div>
+
+        <!-- 互动按钮 -->
+        <div class="flex justify-around py-4 border-t border-b border-gray-800">
+            <button class="flex flex-col items-center">
+                <i class="far fa-heart text-2xl mb-1"></i>
+                <span class="text-xs">1.2k</span>
+            </button>
+            <button class="flex flex-col items-center">
+                <i class="far fa-comment text-2xl mb-1"></i>
+                <span class="text-xs">评论</span>
+            </button>
+            <button class="flex flex-col items-center">
+                <i class="far fa-bookmark text-2xl mb-1"></i>
+                <span class="text-xs">收藏</span>
+            </button>
+            <button class="flex flex-col items-center">
+                <i class="far fa-share-square text-2xl mb-1"></i>
+                <span class="text-xs">分享</span>
+            </button>
+        </div>
+
+        <!-- 评论区 -->
+        <div class="mt-4">
+            <h2 class="text-lg font-semibold mb-4">评论 (128)</h2>
+            <div class="space-y-4">
+                <div class="flex">
+                    <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12" 
+                         class="w-8 h-8 rounded-full mr-3">
+                    <div class="flex-1">
+                        <div class="flex justify-between">
+                            <h3 class="text-sm font-semibold">评论用户</h3>
+                            <span class="text-xs text-gray-400">1小时前</span>
+                        </div>
+                        <p class="text-sm mt-1">这是一条评论内容</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

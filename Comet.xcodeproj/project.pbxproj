@@ -6,6 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2CE6642A2D8B2B1A00A7B39C /* server.js in Resources */ = {isa = PBXBuildFile; fileRef = 2CE664292D8B2B1100A7B39C /* server.js */; };
+		2CE664322D8B367600A7B39C /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE664312D8B367600A7B39C /* Property List.plist */; };
+		2CE664382D8BC69300A7B39C /* TikTokOpenAuthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 2CE664372D8BC69300A7B39C /* TikTokOpenAuthSDK */; };
+		2CE6643A2D8BC69300A7B39C /* TikTokOpenSDKCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2CE664392D8BC69300A7B39C /* TikTokOpenSDKCore */; };
+		2CE6643C2D8C8E3C00A7B39C /* GoogleService-Info.plist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE6643B2D8C8E3C00A7B39C /* GoogleService-Info.plist.plist */; };
+		63598A42F91E7BD26E459865 /* Pods_Comet_CometUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBEA31081EDAC60E99F1114 /* Pods_Comet_CometUITests.framework */; };
+		848FFB25E73C3C0141B13A62 /* Pods_Comet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67D65548933212DE44ED2A4C /* Pods_Comet.framework */; };
+		D8079CF362D02B14EF28E450 /* Pods_CometTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB02DE22FC0AC7FD045FD1B /* Pods_CometTests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2CCC530C2D866630006F5A9E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +38,18 @@
 		2CCC52FA2D86662F006F5A9E /* Comet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCC530B2D866630006F5A9E /* CometTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CometTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCC53152D866630006F5A9E /* CometUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CometUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE664292D8B2B1100A7B39C /* server.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = server.js; sourceTree = "<group>"; };
+		2CE664312D8B367600A7B39C /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		2CE6643B2D8C8E3C00A7B39C /* GoogleService-Info.plist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist.plist"; sourceTree = "<group>"; };
+		2FD0A3E65D367B7F75C528D1 /* Pods-Comet-CometUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comet-CometUITests.release.xcconfig"; path = "Target Support Files/Pods-Comet-CometUITests/Pods-Comet-CometUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4AB02DE22FC0AC7FD045FD1B /* Pods_CometTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CometTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67D65548933212DE44ED2A4C /* Pods_Comet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EBEA31081EDAC60E99F1114 /* Pods_Comet_CometUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comet_CometUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2818047989171D0288EB021 /* Pods-CometTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CometTests.debug.xcconfig"; path = "Target Support Files/Pods-CometTests/Pods-CometTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC0A8F66E3EFBA36755DA508 /* Pods-Comet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comet.release.xcconfig"; path = "Target Support Files/Pods-Comet/Pods-Comet.release.xcconfig"; sourceTree = "<group>"; };
+		AEC0447D2DCB2E0DF6A7AFF0 /* Pods-CometTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CometTests.release.xcconfig"; path = "Target Support Files/Pods-CometTests/Pods-CometTests.release.xcconfig"; sourceTree = "<group>"; };
+		CC6737800696C8B39959BF3A /* Pods-Comet-CometUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comet-CometUITests.debug.xcconfig"; path = "Target Support Files/Pods-Comet-CometUITests/Pods-Comet-CometUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2814F919B70BDD1A062AB76 /* Pods-Comet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comet.debug.xcconfig"; path = "Target Support Files/Pods-Comet/Pods-Comet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +75,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE6643A2D8BC69300A7B39C /* TikTokOpenSDKCore in Frameworks */,
+				2CE664382D8BC69300A7B39C /* TikTokOpenAuthSDK in Frameworks */,
+				848FFB25E73C3C0141B13A62 /* Pods_Comet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8079CF362D02B14EF28E450 /* Pods_CometTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,19 +93,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63598A42F91E7BD26E459865 /* Pods_Comet_CometUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FE5D51C93C5EBDED2C29F5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2814F919B70BDD1A062AB76 /* Pods-Comet.debug.xcconfig */,
+				AC0A8F66E3EFBA36755DA508 /* Pods-Comet.release.xcconfig */,
+				CC6737800696C8B39959BF3A /* Pods-Comet-CometUITests.debug.xcconfig */,
+				2FD0A3E65D367B7F75C528D1 /* Pods-Comet-CometUITests.release.xcconfig */,
+				A2818047989171D0288EB021 /* Pods-CometTests.debug.xcconfig */,
+				AEC0447D2DCB2E0DF6A7AFF0 /* Pods-CometTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2B851EE67478C15AD74FA89D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67D65548933212DE44ED2A4C /* Pods_Comet.framework */,
+				9EBEA31081EDAC60E99F1114 /* Pods_Comet_CometUITests.framework */,
+				4AB02DE22FC0AC7FD045FD1B /* Pods_CometTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2CCC52F12D86662F006F5A9E = {
 			isa = PBXGroup;
 			children = (
+				2CE6643B2D8C8E3C00A7B39C /* GoogleService-Info.plist.plist */,
+				2CE664312D8B367600A7B39C /* Property List.plist */,
+				2CE65F4D2D8B280800A7B39C /* backend */,
 				2CCC52FC2D86662F006F5A9E /* Comet */,
 				2CCC530E2D866630006F5A9E /* CometTests */,
 				2CCC53182D866630006F5A9E /* CometUITests */,
 				2CCC52FB2D86662F006F5A9E /* Products */,
+				0FE5D51C93C5EBDED2C29F5B /* Pods */,
+				2B851EE67478C15AD74FA89D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +148,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2CE65F4D2D8B280800A7B39C /* backend */ = {
+			isa = PBXGroup;
+			children = (
+				2CE664292D8B2B1100A7B39C /* server.js */,
+			);
+			path = backend;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CCC531F2D866630006F5A9E /* Build configuration list for PBXNativeTarget "Comet" */;
 			buildPhases = (
+				DF0DEE91BED6548C2DF3E827 /* [CP] Check Pods Manifest.lock */,
 				2CCC52F62D86662F006F5A9E /* Sources */,
 				2CCC52F72D86662F006F5A9E /* Frameworks */,
 				2CCC52F82D86662F006F5A9E /* Resources */,
+				51B06D2D5F8C72F45052F167 /* [CP] Embed Pods Frameworks */,
+				1734287AA33BD96770EBFD59 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -112,6 +179,8 @@
 			);
 			name = Comet;
 			packageProductDependencies = (
+				2CE664372D8BC69300A7B39C /* TikTokOpenAuthSDK */,
+				2CE664392D8BC69300A7B39C /* TikTokOpenSDKCore */,
 			);
 			productName = Comet;
 			productReference = 2CCC52FA2D86662F006F5A9E /* Comet.app */;
@@ -121,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CCC53222D866630006F5A9E /* Build configuration list for PBXNativeTarget "CometTests" */;
 			buildPhases = (
+				176ED6FF99739AFA49178BE8 /* [CP] Check Pods Manifest.lock */,
 				2CCC53072D866630006F5A9E /* Sources */,
 				2CCC53082D866630006F5A9E /* Frameworks */,
 				2CCC53092D866630006F5A9E /* Resources */,
@@ -134,8 +204,6 @@
 				2CCC530E2D866630006F5A9E /* CometTests */,
 			);
 			name = CometTests;
-			packageProductDependencies = (
-			);
 			productName = CometTests;
 			productReference = 2CCC530B2D866630006F5A9E /* CometTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -144,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CCC53252D866630006F5A9E /* Build configuration list for PBXNativeTarget "CometUITests" */;
 			buildPhases = (
+				50F5FEFFC4CF8DB1874BD141 /* [CP] Check Pods Manifest.lock */,
 				2CCC53112D866630006F5A9E /* Sources */,
 				2CCC53122D866630006F5A9E /* Frameworks */,
 				2CCC53132D866630006F5A9E /* Resources */,
+				C95B72966B8CA1D27A8F397A /* [CP] Embed Pods Frameworks */,
+				C17F0028B0C653A5CDA71946 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,8 +228,6 @@
 				2CCC53182D866630006F5A9E /* CometUITests */,
 			);
 			name = CometUITests;
-			packageProductDependencies = (
-			);
 			productName = CometUITests;
 			productReference = 2CCC53152D866630006F5A9E /* CometUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -195,6 +264,9 @@
 			);
 			mainGroup = 2CCC52F12D86662F006F5A9E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2CE664362D8BC69300A7B39C /* XCRemoteSwiftPackageReference "tiktok-opensdk-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2CCC52FB2D86662F006F5A9E /* Products */;
 			projectDirPath = "";
@@ -212,6 +284,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE6642A2D8B2B1A00A7B39C /* server.js in Resources */,
+				2CE6643C2D8C8E3C00A7B39C /* GoogleService-Info.plist.plist in Resources */,
+				2CE664322D8B367600A7B39C /* Property List.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +305,143 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1734287AA33BD96770EBFD59 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Comet/Pods-Comet-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Comet/Pods-Comet-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Comet/Pods-Comet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		176ED6FF99739AFA49178BE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CometTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50F5FEFFC4CF8DB1874BD141 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Comet-CometUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51B06D2D5F8C72F45052F167 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Comet/Pods-Comet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Comet/Pods-Comet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Comet/Pods-Comet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C17F0028B0C653A5CDA71946 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Comet-CometUITests/Pods-Comet-CometUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Comet-CometUITests/Pods-Comet-CometUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Comet-CometUITests/Pods-Comet-CometUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C95B72966B8CA1D27A8F397A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Comet-CometUITests/Pods-Comet-CometUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Comet-CometUITests/Pods-Comet-CometUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Comet-CometUITests/Pods-Comet-CometUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF0DEE91BED6548C2DF3E827 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Comet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2CCC52F62D86662F006F5A9E /* Sources */ = {
@@ -385,6 +597,7 @@
 		};
 		2CCC53202D866630006F5A9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2814F919B70BDD1A062AB76 /* Pods-Comet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -392,6 +605,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Comet/Preview Content\"";
+				DEVELOPMENT_TEAM = AVKYWQ7GP7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -412,16 +626,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.prelude.comet.Comet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
 		};
 		2CCC53212D866630006F5A9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC0A8F66E3EFBA36755DA508 /* Pods-Comet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -429,6 +645,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Comet/Preview Content\"";
+				DEVELOPMENT_TEAM = AVKYWQ7GP7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -449,16 +666,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.prelude.comet.Comet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
 		};
 		2CCC53232D866630006F5A9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2818047989171D0288EB021 /* Pods-CometTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -481,6 +700,7 @@
 		};
 		2CCC53242D866630006F5A9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEC0447D2DCB2E0DF6A7AFF0 /* Pods-CometTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -503,6 +723,7 @@
 		};
 		2CCC53262D866630006F5A9E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC6737800696C8B39959BF3A /* Pods-Comet-CometUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -524,6 +745,7 @@
 		};
 		2CCC53272D866630006F5A9E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD0A3E65D367B7F75C528D1 /* Pods-Comet-CometUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -583,6 +805,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2CE664362D8BC69300A7B39C /* XCRemoteSwiftPackageReference "tiktok-opensdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tiktok/tiktok-opensdk-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2CE664372D8BC69300A7B39C /* TikTokOpenAuthSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CE664362D8BC69300A7B39C /* XCRemoteSwiftPackageReference "tiktok-opensdk-ios" */;
+			productName = TikTokOpenAuthSDK;
+		};
+		2CE664392D8BC69300A7B39C /* TikTokOpenSDKCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CE664362D8BC69300A7B39C /* XCRemoteSwiftPackageReference "tiktok-opensdk-ios" */;
+			productName = TikTokOpenSDKCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CCC52F22D86662F006F5A9E /* Project object */;
 }
