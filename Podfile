@@ -6,7 +6,6 @@ target 'Comet' do
   use_frameworks!
   pod 'GoogleSignIn'    # Google 登录
   pod 'FBSDKLoginKit'   # Facebook 登录
-  pod 'TwitterKit' 
   # Pods for Comet
 
   target 'CometTests' do

@@ -13,7 +13,7 @@ struct WelcomePage: View {
 
     var body: some View {
         if isActive {
-            LoginPage()  // 自动跳转到登录页
+            LoginView()  // 自动跳转到登录页
         } else {
             VStack {
                 Image("Comet_Logo") // 替换成你的 Logo 图片

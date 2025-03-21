@@ -1,15 +1,6 @@
-//
-//  LoginView.swift
-//  Comet
-//
-//  Created by 小序 on 3/20/25.
-//
-
-
 import SwiftUI
 import GoogleSignIn
-import GoogleSignInSwift
-import TwitterKit
+import Twift
 
 struct LoginView: View {
     @State private var email: String = ""
@@ -18,7 +9,8 @@ struct LoginView: View {
     @State private var gender: String = "Male"
     @State private var showSignUp = false
     @State private var isLoggedIn = false
-    
+    @State private var twitterClient: Twift?
+
     var body: some View {
         VStack {
             Text("Welcome to Comet").font(.largeTitle).bold()
@@ -69,12 +61,12 @@ struct LoginView: View {
             Divider().padding()
             
             HStack {
-                GoogleSignInButton(action: signInWithGoogle)
+                GoogleSignInButtonView()
                     .frame(height: 50)
                     .padding()
                 
                 Button(action: signInWithTwitter) {
-                    Image("twitter_logo") 
+                    Image("twitter_logo")
                         .resizable()
                         .frame(width: 50, height: 50)
                 }
@@ -86,38 +78,73 @@ struct LoginView: View {
             }
             .padding()
         }
+        .onReceive(NotificationCenter.default.publisher(for: .twitterOAuthCallback)) { notification in
+            if let url = notification.userInfo?["url"] as? URL {
+                handleTwitterOAuthCallback(url: url)
+            }
+        }
     }
-    
-    // 邮箱注册逻辑
+
     func signUpWithEmail() {
-        // 这里你需要调用 API 将 email, password, age, gender 发送到后端
         print("User Signed Up: \(email), \(password), \(age), \(gender)")
     }
-    
-    // 邮箱登录逻辑
+
     func loginWithEmail() {
-        // 这里你需要调用 API 验证 email 和 password
         print("User Logged In: \(email)")
     }
-    
-    // Google 登录
+
     func signInWithGoogle() {
-        guard let rootViewController = UIApplication.shared.windows.first?.rootViewController else { return }
-        
+        guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let rootViewController = scene.windows.first?.rootViewController else {
+            return
+        }
+
         GIDSignIn.sharedInstance.signIn(withPresenting: rootViewController) { result, error in
             guard let user = result?.user, error == nil else { return }
             let email = user.profile?.email ?? ""
             print("Google Login Success: \(email)")
         }
     }
-    
-    // Twitter 登录
+
+    /// Twitter 登录
     func signInWithTwitter() {
-        TWTRTwitter.sharedInstance().logIn { session, error in
-            if let session = session {
-                print("Twitter Login Success: \(session.userName)")
-            } else {
-                print("Twitter Login Error: \(String(describing: error?.localizedDescription))")
+        Task {
+            do {
+                let oauthUser = try await Twift.Authentication().authenticateUser(
+                    clientId: "emFpY2R2QlYyUDA3TUFFUGo5MEg6MTpjaQ",
+                    redirectUri: URL(string: "com.comet://callback")!,
+                    scope: Set(OAuth2Scope.allCases)
+                )
+                
+                twitterClient = Twift(oauth2User: oauthUser, onTokenRefresh: saveUserCredentials)
+                saveUserCredentials(oauthUser)
+                
+                print("Twitter Login Success!")
+            } catch {
+                print("Twitter Login Failed: \(error.localizedDescription)")
+            }
+        }
+    }
+
+    func saveUserCredentials(_ oauthUser: OAuth2User) {
+        print("Saving Twitter Credentials")
+    }
+
+    func handleTwitterOAuthCallback(url: URL) {
+        Task {
+            do {
+                let oauthUser = try await Twift.Authentication().authenticateUser(
+                    clientId: "emFpY2R2QlYyUDA3TUFFUGo5MEg6MTpjaQ",
+                    redirectUri: URL(string: "com.comet://callback")!,
+                    scope: Set(OAuth2Scope.allCases)
+                )
+                
+                twitterClient = Twift(oauth2User: oauthUser, onTokenRefresh: saveUserCredentials)
+                saveUserCredentials(oauthUser)
+                
+                print("Twitter OAuth Callback Handled Successfully!")
+            } catch {
+                print("Twitter OAuth Callback Error: \(error.localizedDescription)")
             }
         }
     }

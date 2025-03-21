@@ -1,29 +1,16 @@
-//
-//  AppDelegate.swift
-//  Comet
-//
-//  Created by 小序 on 3/20/25.
-//
-
-
 import UIKit
 import GoogleSignIn
-import TwitterKit
+import Twift
 
-@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var twitterClient: Twift?
 
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        GIDSignIn.sharedInstance.configuration = GIDConfiguration(clientID: "YOUR_GOOGLE_CLIENT_ID")
-        
-        TWTRTwitter.sharedInstance().start(
-            withConsumerKey: "YOUR_TWITTER_CONSUMER_KEY",
-            consumerSecret: "YOUR_TWITTER_CONSUMER_SECRET"
-        )
-        
+        GIDSignIn.sharedInstance.configuration = GIDConfiguration(clientID: "313902942564-3c0so7sn2kq46fcma6u5k955ggt0jfpe.apps.googleusercontent.com")
         return true
     }
 
@@ -32,6 +19,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         open url: URL,
         options: [UIApplication.OpenURLOptionsKey: Any] = [:]
     ) -> Bool {
-        return GIDSignIn.sharedInstance.handle(url) || TWTRTwitter.sharedInstance().application(app, open: url, options: options)
+        // Handle Google Sign-In callback
+        if GIDSignIn.sharedInstance.handle(url) {
+            return true
+        }
+        
+        // Handle Twitter OAuth callback
+        if url.scheme == "com.comet" { // Ensure this matches your redirect URI scheme
+            NotificationCenter.default.post(name: .twitterOAuthCallback, object: nil, userInfo: ["url": url])
+            return true
+        }
+        
+        return false
     }
+}
+
+// Notification name for Twitter OAuth callback
+extension Notification.Name {
+    static let twitterOAuthCallback = Notification.Name("TwitterOAuthCallback")
 }
